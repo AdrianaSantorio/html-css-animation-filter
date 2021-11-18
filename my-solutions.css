@@ -167,3 +167,76 @@
         right: 20%;
     }
 }
+
+/* esercizio 13 */
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: perimeter-slide-top;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes  perimeter-slide-top {
+    30%{
+        position: absolute;
+        top: -10px;
+        left: calc(100% - 30px);
+    }
+    45%{
+        position: absolute;
+        top: 60px;
+        left: calc(100% - 30px);
+    }
+    80%{
+        position: absolute;
+        top: 60px;
+        left: - 30px;
+    }
+    95%{
+        position: absolute;
+        top: -10px;
+        left: -30px;
+    }
+    100%{
+        position: absolute;
+        top: -10px;
+        left: 10%;
+    }
+}
+   
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: perimeter-slide-bottom;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes  perimeter-slide-bottom {
+    30%{
+        position: absolute;
+        bottom: -10px;
+        right: calc(100% - 30px);
+    }
+    45%{
+        position: absolute;
+        bottom: 60px;
+        right: calc(100% - 30px);
+    }
+    80%{
+        position: absolute;
+        bottom: 60px;
+        right: -30px;
+    }
+    95%{
+        position: absolute;
+        bottom: -10px;
+        right: -30px;
+    }
+    100%{
+        position: absolute;
+         bottom: -10px;
+         right: 20%;
+    }
+}
