@@ -125,3 +125,45 @@
         transform: rotate(-0deg);
     }
 }
+
+/* esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: x-slide-right;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes  x-slide-right {
+    50%{
+        position: absolute;
+        top: -10px;
+        left: calc(100% - 60px);
+    }
+    100%{
+        position: absolute;
+        top: -10px;
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: x-slide-left;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes  x-slide-left {
+    50%{
+        position: absolute;
+        bottom: -10px;
+        right: calc(100% - 60px);
+    }
+    100%{
+        position: absolute;
+        bottom: -10px;
+        right: 20%;
+    }
+}
